@@ -1,26 +1,60 @@
-const store = require("./store");
-const inquirer = require("inquirer")
-const {menu, searchByName} = require("./utils/questions")
+const { prompt } = require ("inquirer");
+const logo = require ("asciiart-logo");
+const db = require("./db");
+const { inherits } = require("util");
+require("console.table");
 
+init();
 
-async function userMenu() {
-const { choice } = await inquirer.prompt(menu);
+function init() {
+    const logoText = logo({name: "Employee Manager"}).render();
 
-const formattedChoice = choice.toLOwerCase().trim;
-switch (formattedChoice){
-    case "search by employee name": store.searchByName(formattedChoice)
-    case "search by employee name": store.searchByName(formattedChoice)
-    case "search by employee name": store.searchByName(formattedChoice)
-    case "search by employee name": store.searchByName(formattedChoice)
-}
-    
+    console.log(logoText); 
+
+    loadMainPrompts();
 }
 
-async function querySearchByName() {
-    const { name } = await inquirer.prompt(searchByName)
-    store.searchByName(name);
+async function loadMainPrompts() {
+    const { choice } = await prompt([
+        {
+            type: "list",
+            name: "choice", 
+            message: "wat would you like to do?", 
+            choices: [
+                {
+                    name: "View All Employees", 
+                    value: "VIEW_EMPLOYEES"
+                },
+                {
+                    name: "View All Employees By Department", 
+                    value: "VIEW_EMPLOYEES_BY_DEPARTMENT"
+                },
+                {
+                    name: "Add Role",
+                    value: "ADD_ROLE"
+                },
+                {
+                    name: "Remove Role",
+                    value: "REMOVE_ROLE"
+                }, 
+                {
+                    name: "View All Departments",
+                    value: "VIEW_DEPARTMENTS"
+                }, 
+                {
+                    name: "Add Department", 
+                    value: "ADD_DEPARTMENT"
 
-    userMenu();
-
+                },
+                {
+                    name: "Remove Department", 
+                    value: "REMOVE_DEPARTMENT"
+                },
+                {
+                    name: "Quit", 
+                    value: "QUIT"
+                }
+            ]        
+        }
+    ])
 }
-main()
