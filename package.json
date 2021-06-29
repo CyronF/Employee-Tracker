@@ -1,0 +1,29 @@
+{
+  "name": "portfolio12",
+  "version": "1.0.0",
+  "description": "Week 12 Homework: Employee Tracker",
+  "main": "index.js",
+  "dependencies": {
+    "ascii-art-font-updated": "^1.0.0",
+    "asciiart-logo": "^0.2.6",
+    "inquirer": "^8.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyronF/Portfolio12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CyronF/Portfolio12/issues"
+  },
+  "homepage": "https://github.com/CyronF/Portfolio12#readme"
+}

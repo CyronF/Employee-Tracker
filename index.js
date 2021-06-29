@@ -1,8 +1,8 @@
 const { prompt } = require ("inquirer");
 const logo = require ("asciiart-logo");
-const db = require("./db");
+const db = require("./Main/db/connection");
 const { inherits } = require("util");
-require("console.table");
+//require("console.table");
 
 init();
 
