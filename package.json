@@ -14,7 +14,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node seed.js"
+    "seed": "node seeds/seed.js",
+    "start": "node windex.js"
   },
   "repository": {
     "type": "git",
