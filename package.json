@@ -9,13 +9,14 @@
     "inquirer": "^8.1.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "sequelize": "^6.6.4",
     "start": "^5.1.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node seeds/seed.js",
-    "start": "node windex.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
