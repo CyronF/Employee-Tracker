@@ -1,8 +1,6 @@
-# Portfolio12
+# Week 12 Assignment: Employee Tracker
 
-Week 12 Homework: Employee Tracker
-
-## User Story
+## User Story:
 
 ```
 As a business owner
