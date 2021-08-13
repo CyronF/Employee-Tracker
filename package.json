@@ -6,6 +6,7 @@
   "dependencies": {
     "ascii-art-font-updated": "^1.0.0",
     "asciiart-logo": "^0.2.6",
+    "dotenv": "^10.0.0",
     "inquirer": "^8.1.1",
     "missing": "0.0.1",
     "mysql": "^2.18.1",
@@ -15,9 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node seeds/seed.js",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

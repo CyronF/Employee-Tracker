@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const connection = require("./db/connection");
+const connection = require("./assets/connection");
 
 
 
@@ -450,6 +450,10 @@ function utilizedBudget(){
 }
 
 connection.connect((err) => {
-    // if (err) throw err;
-    start();
-});
+// if (err)
+//     console.log ('error', err.message, err.stack)
+//   else
+//     console.log ('result', result)
+start();
+})
+
